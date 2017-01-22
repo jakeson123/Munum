@@ -1,0 +1,35 @@
+{
+  "name": "munum",
+  "version": "1.0.0",
+  "description": "munum",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeson123/Munum.git"
+  },
+  "keywords": [
+    "munum"
+  ],
+  "author": "Jeisson Fabian Sanchez Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeson123/Munum/issues"
+  },
+  "homepage": "https://github.com/jakeson123/Munum#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "method-override": "^2.3.7",
+    "mongodb": "^2.2.21",
+    "mongoose": "^4.7.7",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "pug": "^2.0.0-beta6"
+  }
+}
