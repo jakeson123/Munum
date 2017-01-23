@@ -8,20 +8,22 @@ module.exports = {
     assets: {
         lib: {
             css: [
-                'public/lib/bootstrap/dist/css/bootstrap.css'
+                '/lib/bootstrap/dist/css/bootstrap.css'
             ],
             js: [
-                'public/lib/angular/angular.js',
-                'public/lib/angular-resource/angular-resource.js',
-                'public/lib/angular-ui-router/release/angular-ui-router.js',
-            ],
-            css: [
-                'public/modules/**/css/*.css'
-            ],
-            js: [
-                'public/config.js',
-                'public/application.js',
-                'public/modules/*/*.js'
+                '/lib/angular/angular.min.js',
+                '/lib/angular-resource/angular-resource.min.js',
+                '/lib/angular-ui-router/release/angular-ui-router.min.js',
+
+
+                '/config.js',
+                '/application.js',
+
+                '/modules/users/users.client.module.js',
+                '/modules/users/config/users.client.routes.js',
+                '/modules/users/controllers/authentication.client.controller.js',
+
+
             ]
         }
     }

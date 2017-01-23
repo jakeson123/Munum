@@ -15,6 +15,10 @@ module.exports = function() {
 
     var app = express();
 
+    app.locals.jsFiles = config.assets.lib.js;
+
+    app.locals.cssFiles = config.assets.lib.css;
+
     //Usar la varible 'NODE_ENV' para activar los middlware 'morgan' logger o 'compress'
     if (process.env.NODE_ENV === 'development') {
         app.use(morgan('dev'));
@@ -22,10 +26,8 @@ module.exports = function() {
         app.use(compress());
     }
 
-    app.locals.cssFiles = function() {
-        var output = this.getGlobbedFiles(this.assets.lib.css.concat(this.assets.css), 'public/');
-        return output;
-    }
+
+
 
 
 
