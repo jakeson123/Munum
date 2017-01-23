@@ -11,7 +11,7 @@ var config = require('./config'),
     methodOverride = require('method-override'),
     passport = require('passport');
 
-module.exports = function(){
+module.exports = function() {
 
     var app = express();
 
@@ -22,6 +22,13 @@ module.exports = function(){
         app.use(compress());
     }
 
+    app.locals.cssFiles = function() {
+        var output = this.getGlobbedFiles(this.assets.lib.css.concat(this.assets.css), 'public/');
+        return output;
+    }
+
+
+
     //configurar el middleware 'body-parser' y el 'method-override'
     app.use(bodyParser.urlencoded({
         extended: true
@@ -31,9 +38,9 @@ module.exports = function(){
 
     //configurar el middleware 'session''
     app.use(session({
-      saveUninitializaed:true,
-      resave :true,
-      secret: config.sessionSecreta
+        saveUninitializaed: true,
+        resave: true,
+        secret: config.sessionSecreta
     }))
 
     // configurar la session de 'passport'
@@ -41,18 +48,18 @@ module.exports = function(){
     app.use(passport.session());
 
     // conectar 'flash' para mensajes flash
-  	//app.use(flash());
+    //app.use(flash());
 
     //Configuarar el motor view de la aplicacion y el directorio de 'views'
     app.set('views', './app/views');
-    app.set('view engine', 'pug');
+    app.set('view engine', config.templateEngine);
 
     //Cargar los archivos de enrutamiento
-    //require('../app/routes/index.server.routes.js')(app);
-    //require('../app/routes/users.server.routes.js')(app);
+    require('../app/routes/index.server.routes.js')(app);
+    //require('../app/routes/user.server.routes.js')(app);
 
     //Configurar el serviddor de archivos estáticos
-    app.use (express.static('./public'));
+    app.use(express.static('./public'));
 
     //Devolver la instancia de la aplicación Express
     return app;
