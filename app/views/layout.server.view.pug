@@ -14,7 +14,7 @@ html
     h1 Jeisson Fabian Sanchez
     header(data-ng-include="'/modules/core/views/header.client.view.pug'" .navbar)
 
-    section(data-ui-view)
+    section(ui-view)
 
     each jsFile in jsFiles
       script(type='text/javascript', src= jsFile)

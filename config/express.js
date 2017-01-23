@@ -9,6 +9,8 @@ var config = require('./config'),
     session = require('express-session'),
     compress = require('compression'),
     methodOverride = require('method-override'),
+    path = require('path'),
+    pugStatic = require('pug-static'),
     passport = require('passport');
 
 module.exports = function() {
@@ -16,7 +18,6 @@ module.exports = function() {
     var app = express();
 
     app.locals.jsFiles = config.assets.lib.js;
-
     app.locals.cssFiles = config.assets.lib.css;
 
     //Usar la varible 'NODE_ENV' para activar los middlware 'morgan' logger o 'compress'
@@ -25,11 +26,6 @@ module.exports = function() {
     } else if (process.env.NODE_ENV === 'production') {
         app.use(compress());
     }
-
-
-
-
-
 
     //configurar el middleware 'body-parser' y el 'method-override'
     app.use(bodyParser.urlencoded({
@@ -53,8 +49,8 @@ module.exports = function() {
     //app.use(flash());
 
     //Configuarar el motor view de la aplicacion y el directorio de 'views'
-    app.set('views', './app/views');
     app.set('view engine', config.templateEngine);
+    app.set('views', './app/views');
 
     //Cargar los archivos de enrutamiento
     require('../app/routes/index.server.routes.js')(app);
@@ -62,7 +58,6 @@ module.exports = function() {
 
     //Configurar el serviddor de archivos estáticos
     app.use(express.static('./public'));
-
     //Devolver la instancia de la aplicación Express
     return app;
 }
