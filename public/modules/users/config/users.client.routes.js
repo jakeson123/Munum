@@ -12,6 +12,11 @@ angular.module('users').config(['$stateProvider', '$urlRouterProvider',
         .state('profile2', {
             url: '/user',
             templateUrl: '/modules/users/views/authentication/signin.client.view.html'
+        })
+        .state('registro', {
+            url: '/auth/signup'
+            //templateUrl: '/modules/users/views/authentication/signin.client.view.html'
         });
+
     }
 ]);
