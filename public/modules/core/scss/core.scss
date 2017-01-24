@@ -1,0 +1,18 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+body {
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #757575;
+
+    .topbar {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background-color: #37474f;
+    }
+}

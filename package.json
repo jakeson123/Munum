@@ -25,7 +25,6 @@
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
-    "loadash": "0.0.1",
     "lodash": "^4.17.4",
     "method-override": "^2.3.7",
     "mongodb": "^2.2.21",
@@ -34,5 +33,9 @@
     "passport": "^0.3.2",
     "pug": "^2.0.0-beta6",
     "pug-static": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   }
 }
