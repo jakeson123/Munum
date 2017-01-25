@@ -1,3 +1,16 @@
+//crear variables => $naranja: #000000;
+//importa un archivo => @import 'nombre'
+
+/*@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@include border-radius(10px);
+*/
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
 	display: none !important;
 }
