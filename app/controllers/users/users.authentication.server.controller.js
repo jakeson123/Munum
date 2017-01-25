@@ -29,6 +29,7 @@ exports.signup = function(req, res, next) {
             user.password = undefined;
             user.salt = undefined;
 
+            res.json(user);
             /*req.login(user, function(err) {
                 if (err) {
                     res.status(400).send(err);
