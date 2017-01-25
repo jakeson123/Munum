@@ -11,7 +11,7 @@ html(lang='es')
       link(rel='stylesheet', href=cssFile)
 
   body
-    header(.navbar data-ng-include="'/modules/core/views/header.client.view.html'")
+    header(data-ng-include="'/modules/core/views/header.client.view.html'")
     section(data-ui-view)
 
     each jsFile in jsFiles
