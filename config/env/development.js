@@ -1,7 +1,7 @@
 'use strict';
 /*'mongodb://localhost/munum',*/
 module.exports = {
-    db: 'mongodb://munum.17:medios2017M@hostname:ds155160.mlab.com:55160/munum',
+    db: 'mongodb://munum.17:medios2017M@ds155160.mlab.com:55160/munum',
     port: process.env.PORT || 8080,
     sessionSecreta: 'developmentSessionSecret',
     templateEngine: 'pug',
