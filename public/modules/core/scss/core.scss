@@ -1,20 +1,43 @@
-$grey: #757575;
-$blue: #37474f;
-$purple: #7a6a93;
-$white: white;
+$yellowMUNUM: #f9c515;
+$blueMUNUM: #0d133a;
+$organgeMUNUM: #eba109;
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-	display: none !important;
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+    display: none !important;
+}
+
+
+@font-face {
+    font-family: "lemonMilk";
+    src: url("../../../lib/fonts/lemonMilk.otf") format('opentype');
+}
+@font-face {
+    font-family: "adam";
+    src: url("../../../lib/fonts/adam.otf") format('opentype');
 }
 
 body {
-  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
-	color: $white;
-  .top-bar{
-		height: 60px;
-		background-color: $blue;
-	}
+    overflow: hidden;
 }
+
+
+
+
+
+/*@media screen and (max-width: 780px) {
+    .navbar {
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #logo {
+            display: none;
+        }
+    }
+}*/

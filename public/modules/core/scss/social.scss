@@ -1,0 +1,109 @@
+@import 'core';
+
+footer {
+    width: 100%;
+    position: absolute;
+    margin-top: 34vh;
+
+    #divFooter {
+        width: 100%;
+        height: 68vh;
+        position: absolute;
+        top: 32vh;
+        display: flex;
+        flex-direction: column;
+        background-color: $yellowMUNUM;
+
+        #arrowFooter {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            #arrowFooterDiv {
+                width: 100px;
+                height: 30px;
+                top: -30px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                clip-path: polygon(10% 0, 90% 0,100% 100%,0% 100%);
+                background-color: $yellowMUNUM;
+                cursor: pointer;
+            }
+        }
+
+        #headFooter {
+            width: 100%;
+            height: 55px;
+            background-color: $organgeMUNUM;
+            color: white;
+
+            div {
+                padding-left: 0;
+            }
+
+            .cajaFlex {
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .caja {
+                    height: 60px;
+                    width: 60px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 2px solid $yellowMUNUM;
+                    color: white;
+                    font-size: 30px;
+                }
+
+                .caja:hover {
+                    background-color: $yellowMUNUM;
+                    border-right: 2px solid $yellowMUNUM;
+                }
+            }
+
+            h3 {
+                font-family: adam;
+                font-size: 15px;
+            }
+
+            span {
+                font-family: lemonMilk;
+                font-size: 22px;
+            }
+        }
+    }
+
+    #bodyFooter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+        .bodyFooterBoxFlex {
+            width: 100%;
+            margin: 20px 0.1%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            .bodyFooterBox {
+                border-radius: 10px;
+                margin: 0.5%;
+                width: 30%;
+                height: 53vh;
+                background-color: white;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import 'core';
+
+aside {
+    #divAside {
+      width: 17%;
+      height: 100vh;
+      position: absolute;
+      min-width: 200px;
+      right: 0px;
+      background-color: $blueMUNUM;
+      color: white;
+      font-family: adam;
+        #arrowAside {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+
+            #arrowAsideDiv {
+                width: 30px;
+                height: 150px;
+                top: 70px;
+                right: 0;
+                position: absolute;
+                clip-path: polygon(0 10%,100% 0,100% 100%,0 90%);
+                background-color: $yellowMUNUM;
+                cursor: pointer;
+            }
+
+            #arrowAsideDiv:hover {
+                background-color: $organgeMUNUM;
+            }
+        }
+
+        #loginBox {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            position: relative;
+            top: 80px;
+
+            #login {
+                width: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+
+                input {
+                    width: 80%;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid white;
+                }
+
+                input:focus {
+                    outline: 0;
+                    border-right-width: 1px;
+                    border-color: $organgeMUNUM;
+                }
+
+                #loginBtn {
+                    background-color: $yellowMUNUM;
+                    height: 30px;
+                    border-radius: 5px;
+                }
+
+                #loginBtn:hover {
+                    background-color: $organgeMUNUM;
+                    height: 30px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

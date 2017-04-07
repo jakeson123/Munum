@@ -17,7 +17,7 @@ gulp.task('nodemon', function(cb) {
 });
 
 gulp.task('browser-sync', ['nodemon'], function() {
-    browserSync.init(["css/*.css", "js/*.js", "html/*.html" ], {
+    browserSync.init(["css/*.css", "js/*.js", "html/*.html"], {
         proxy: "http://localhost:8080",
         //files: ["public/modules/core/css/*.*"],
         port: 7000
@@ -25,9 +25,9 @@ gulp.task('browser-sync', ['nodemon'], function() {
 });
 
 gulp.task('html', function() {
-      return gulp.src('./public/modules/*/views/*.html')
-            .pipe(browserSync.stream());
-    });
+    return gulp.src('./public/modules/*/views/*.html')
+        .pipe(browserSync.stream());
+});
 
 gulp.task('sass', function() {
     return gulp.src('./public/modules/core/scss/*.scss')
@@ -36,9 +36,16 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+/**gulp.task('sass2', function() {
+    return gulp.src('./public/lib/foundation-sites/scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./public/lib/foundation-sites/css'));
+});*/
+
 gulp.task('watch', function() {
     gulp.watch('./public/modules/*/scss/*.scss', ['sass']);
+    //gulp.watch('./public/lib/foundation-sites/scss/*.scss', ['sass2']);
     gulp.watch('./public/modules/*/views/*.html', ['html']);
 });
 
-gulp.task('default', ['sass', 'html',  'browser-sync', 'watch']);
+gulp.task('default', ['sass', 'html', 'browser-sync', 'watch']);

@@ -9,18 +9,19 @@ module.exports = {
         lib: {
             css: [
                 //'/lib/bootstrap/dist/css/bootstrap.css',
-                '/lib/foundation/css/foundation.css',
-                '/lib/foundation/css/normalize.css',
-                '/modules/core/css/core.css'
+                //'/modules/core/scss/core.scss'
+                //'/modules/core/css/core.css'
             ],
             js: [
                 '/lib/angular/angular.min.js',
+                '/lib/bootstrap/dist/js/bootstrap.js',
                 '/lib/angular-resource/angular-resource.min.js',
                 '/lib/angular-ui-router/release/angular-ui-router.min.js',
 
                 '/lib/jquery/dist/jquery.js',
-                '/lib/modernizr/modernizr.js',
-                '/lib/foundation/js/foundation.min.js',                
+                //'/lib/what-input/dist/what-input.js',
+                //'/lib/modernizr/modernizr.js',
+                //'/lib/foundation-sites/dist/js/foundation.js',
 
                 '/config.js',
                 '/application.js',

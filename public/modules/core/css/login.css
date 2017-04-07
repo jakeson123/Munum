@@ -1,0 +1,84 @@
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+  display: none !important; }
+
+@font-face {
+  font-family: "lemonMilk";
+  src: url("../../../lib/fonts/lemonMilk.otf") format("opentype"); }
+
+@font-face {
+  font-family: "adam";
+  src: url("../../../lib/fonts/adam.otf") format("opentype"); }
+
+body {
+  overflow: hidden; }
+
+/*@media screen and (max-width: 780px) {
+    .navbar {
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #logo {
+            display: none;
+        }
+    }
+}*/
+aside #divAside {
+  width: 17%;
+  height: 100vh;
+  position: absolute;
+  min-width: 200px;
+  right: 0px;
+  background-color: #0d133a;
+  color: white;
+  font-family: adam; }
+  aside #divAside #arrowAside {
+    position: absolute;
+    display: flex;
+    justify-content: center; }
+    aside #divAside #arrowAside #arrowAsideDiv {
+      width: 30px;
+      height: 150px;
+      top: 70px;
+      right: 0;
+      position: absolute;
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+      background-color: #f9c515;
+      cursor: pointer; }
+    aside #divAside #arrowAside #arrowAsideDiv:hover {
+      background-color: #eba109; }
+  aside #divAside #loginBox {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    top: 80px; }
+    aside #divAside #loginBox #login {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      aside #divAside #loginBox #login input {
+        width: 80%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid white; }
+      aside #divAside #loginBox #login input:focus {
+        outline: 0;
+        border-right-width: 1px;
+        border-color: #eba109; }
+      aside #divAside #loginBox #login #loginBtn {
+        background-color: #f9c515;
+        height: 30px;
+        border-radius: 5px; }
+      aside #divAside #loginBox #login #loginBtn:hover {
+        background-color: #eba109;
+        height: 30px;
+        border-radius: 5px; }

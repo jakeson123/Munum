@@ -1,0 +1,19 @@
+<section data-ng-controller='LoginController'>
+    <aside>
+        <div id="divAside">
+            <div id="arrowAside">
+                <div id="arrowAsideDiv"></div>
+            </div>
+            <div id="loginBox">
+                <h2>Bienvenidos</h2>
+                <br>
+                <br>
+                <form id="login" data-ng-submit="login()" role="form" name="login">
+                    <input type="text" ng-model="login.name" placeholder="  E-mail"> </br>
+                    <input type="password" ng-model="login.password" placeholder="  Contraseña"> </br>
+                    <input id="loginBtn" type="submit" value="Ingresar">
+                </form>
+            </div>
+        </div>
+    </aside>
+</section>

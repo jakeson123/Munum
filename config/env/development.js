@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: 'mongodb://localhost/mean',
+    db: 'mongodb://localhost/munum',
     port: process.env.PORT || 8080,
     sessionSecreta: 'developmentSessionSecret',
     templateEngine: 'pug',
@@ -9,11 +9,14 @@ module.exports = {
         lib: {
             css: [
                 '/lib/bootstrap/dist/css/bootstrap.css',
-
-                '/modules/core/css/core.css'
+                '/lib/fonts/fontello/css/fontello.css',
+                '/modules/core/css/core.css',
+                '/modules/core/css/header.css',
+                '/modules/core/css/login.css',
+                '/modules/core/css/social.css'
             ],
             js: [
-                '/lib/jquery/jquery.min.js',
+                '/lib/jquery/dist/jquery.js',
                 '/lib/angular/angular.min.js',
                 '/lib/angular-resource/angular-resource.min.js',
                 '/lib/angular-ui-router/release/angular-ui-router.min.js',
@@ -25,6 +28,8 @@ module.exports = {
                 '/modules/core/core.client.module.js',
                 '/modules/core/config/core.client.routes.js',
                 '/modules/core/controllers/header.client.controller.js',
+                '/modules/core/controllers/login.client.controller.js',
+                '/modules/core/controllers/social.client.controller.js',
 
                 //controladores de usuario
                 '/modules/users/users.client.module.js',

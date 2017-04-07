@@ -1,0 +1,109 @@
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+  display: none !important; }
+
+@font-face {
+  font-family: "lemonMilk";
+  src: url("../../../lib/fonts/lemonMilk.otf") format("opentype"); }
+
+@font-face {
+  font-family: "adam";
+  src: url("../../../lib/fonts/adam.otf") format("opentype"); }
+
+body {
+  overflow: hidden; }
+
+/*@media screen and (max-width: 780px) {
+    .navbar {
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #logo {
+            display: none;
+        }
+    }
+}*/
+footer {
+  width: 100%;
+  position: absolute;
+  margin-top: 34vh; }
+  footer #divFooter {
+    width: 100%;
+    height: 68vh;
+    position: absolute;
+    top: 32vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9c515; }
+    footer #divFooter #arrowFooter {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      footer #divFooter #arrowFooter #arrowFooterDiv {
+        width: 100px;
+        height: 30px;
+        top: -30px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+        background-color: #f9c515;
+        cursor: pointer; }
+    footer #divFooter #headFooter {
+      width: 100%;
+      height: 55px;
+      background-color: #eba109;
+      color: white; }
+      footer #divFooter #headFooter div {
+        padding-left: 0; }
+      footer #divFooter #headFooter .cajaFlex {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        footer #divFooter #headFooter .cajaFlex a {
+          text-decoration: none;
+          color: white; }
+        footer #divFooter #headFooter .cajaFlex .caja {
+          height: 60px;
+          width: 60px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: 2px solid #f9c515;
+          color: white;
+          font-size: 30px; }
+        footer #divFooter #headFooter .cajaFlex .caja:hover {
+          background-color: #f9c515;
+          border-right: 2px solid #f9c515; }
+      footer #divFooter #headFooter h3 {
+        font-family: adam;
+        font-size: 15px; }
+      footer #divFooter #headFooter span {
+        font-family: lemonMilk;
+        font-size: 22px; }
+  footer #bodyFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0; }
+    footer #bodyFooter .bodyFooterBoxFlex {
+      width: 100%;
+      margin: 20px 0.1%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap; }
+      footer #bodyFooter .bodyFooterBoxFlex .bodyFooterBox {
+        border-radius: 10px;
+        margin: 0.5%;
+        width: 30%;
+        height: 53vh;
+        background-color: white;
+        flex-wrap: nowrap; }
