@@ -1,6 +1,6 @@
 'use strict';
 /*'mongodb://localhost/munum',*/
-module.exports = {
+/*module.exports = {
     db: 'mongodb://munum:medios2017M@ds155160.mlab.com:55160/munum',
     port: process.env.PORT || 8080,
     sessionSecreta: 'developmentSessionSecret',
@@ -38,4 +38,4 @@ module.exports = {
             ]
         }
     }
-};
+};*/
