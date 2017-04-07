@@ -40,7 +40,7 @@ footer {
     top: 32vh;
     display: flex;
     flex-direction: column;
-    background-color: #f9c515; }
+    background-color: red; }
     footer #divFooter #arrowFooter {
       width: 100%;
       display: flex;
