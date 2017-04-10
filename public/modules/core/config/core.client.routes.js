@@ -89,7 +89,7 @@ angular.module('core', ['ui.router']).config(['$stateProvider', '$urlRouterProvi
             .state('users', {
                 parent: 'admin',
                 url: '/admin/users',
-                templateUrl: '#'
+                templateUrl: '/modules/users/views/userList.client.view.html'
             })
             .state('qr', {
                 parent: 'admin',
