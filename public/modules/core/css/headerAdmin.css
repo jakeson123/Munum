@@ -42,10 +42,12 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
+      #navAdmin ul li a #logoAdmin {
+        font-size: 30px !important; }
       #navAdmin ul li a i {
         font-size: 20px;
         color: #eba109; }
-    #navAdmin ul li a:hover {
+    #navAdmin ul li a:active a:link {
       background-color: #f9c515; }
-      #navAdmin ul li a:hover i {
+      #navAdmin ul li a:active a:link i {
         color: white; }

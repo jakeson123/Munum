@@ -12,10 +12,10 @@ html(lang='es')
 
   body
     
-    header(data-ng-include="'/modules/core/views/header.client.view.html'")
     section(data-ui-view)
-        div(data-ng-include="'/modules/core/views/login.client.view.html'")
-    footer(data-ng-include="'/modules/core/views/social.client.view.html'")
+    section(ui-view='login')
+    section(ui-view='social')
+    
     img(src="foto.jpg" alt="" width="100%")
 
     each jsFile in jsFiles

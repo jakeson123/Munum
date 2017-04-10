@@ -6,6 +6,9 @@
 .icon-list:before { content: '\e804'; } /* '' */
 .icon-user:before { content: '\e805'; } /* '' */
 .icon-userList:before { content: '\e806'; } /* '' */
+.icon-clock:before { content: '\e807'; } /* '' */
+.icon-clipboard:before { content: '\e808'; } /* '' */
+.icon-logo:before { content: '\e809'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-youtube:before { content: '\f16a'; } /* '' */
 .icon-instagram:before { content: '\f32d'; } /* '' */

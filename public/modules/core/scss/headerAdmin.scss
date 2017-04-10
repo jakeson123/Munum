@@ -16,16 +16,19 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                #logoAdmin{
+                  font-size: 30px !important;
+                }
                 i {
                     font-size: 20px;
                     color: $organgeMUNUM;
                 }
             }
 
-            a:hover {
+            a:active a:link {
               background-color: $yellowMUNUM;
                 i {
+
                     color: white;
                 }
             }
