@@ -8,6 +8,10 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
         .state('home', {
             url: '/',
             templateUrl: '/modules/core/views/login.client.view.html'
+        })
+        .state('admin', {
+            url: '/admin',
+            templateUrl: '/modules/core/views/headerAdmin.client.view.html'
         });
     }
 ]);

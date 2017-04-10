@@ -1,0 +1,94 @@
+@import 'general';
+
+.userBoxDiv {
+    width: 220px;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    top: 300px;
+    margin: 12px;
+    .pictureBox {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: $blueMUNUM;
+
+        .picture {
+            width: 150px;
+            height: 150px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+
+    .textBox {
+        width: 100%;
+        height: 100%;
+        background-color: $blueMUNUM;
+
+        h4 {
+            text-align: center;
+            color: rgb(203, 203, 203);
+        }
+    }
+
+    .editores {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        a{
+          text-decoration: none;
+        }
+        #edit {
+            width: 200px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            border-bottom-left-radius: 10px;
+            background-color: $yellowMUNUM;
+            cursor: pointer;
+            border: 0;
+            color: white;
+
+        }
+
+        #delete {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom-right-radius: 10px;
+            background-color: $organgeMUNUM;
+            cursor: pointer;
+            border: 0;
+            color: white;
+        }
+
+        #edit:hover{
+          background-color: white;
+          color: $organgeMUNUM;
+          border-bottom-left-radius:  10px;
+          border: 1px solid $yellowMUNUM;
+          text-decoration: none;
+        }
+
+        #delete:hover {
+            background-color: white;
+            color: $organgeMUNUM;
+            border-bottom-right-radius: 10px;
+            border: 1px solid $yellowMUNUM;
+        }
+
+    }
+}

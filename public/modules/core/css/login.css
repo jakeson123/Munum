@@ -29,20 +29,20 @@ body {
         }
     }
 }*/
-aside #divAside {
+#login #divAside {
   width: 17%;
   height: 100vh;
   position: absolute;
   min-width: 200px;
   right: 0px;
-  background-color: #0d133a;
+  background-color: rgba(13, 19, 58, 0.8);
   color: white;
   font-family: adam; }
-  aside #divAside #arrowAside {
+  #login #divAside #arrowAside {
     position: absolute;
     display: flex;
     justify-content: center; }
-    aside #divAside #arrowAside #arrowAsideDiv {
+    #login #divAside #arrowAside #arrowAsideDiv {
       width: 30px;
       height: 150px;
       top: 70px;
@@ -51,34 +51,34 @@ aside #divAside {
       clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
       background-color: #f9c515;
       cursor: pointer; }
-    aside #divAside #arrowAside #arrowAsideDiv:hover {
+    #login #divAside #arrowAside #arrowAsideDiv:hover {
       background-color: #eba109; }
-  aside #divAside #loginBox {
+  #login #divAside #loginBox {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     position: relative;
     top: 80px; }
-    aside #divAside #loginBox #login {
+    #login #divAside #loginBox #login {
       width: 100%;
       display: flex;
       flex-flow: column nowrap;
       align-items: center; }
-      aside #divAside #loginBox #login input {
+      #login #divAside #loginBox #login input {
         width: 80%;
         background: none;
         border: none;
         border-bottom: 1px solid white; }
-      aside #divAside #loginBox #login input:focus {
+      #login #divAside #loginBox #login input:focus {
         outline: 0;
         border-right-width: 1px;
         border-color: #eba109; }
-      aside #divAside #loginBox #login #loginBtn {
+      #login #divAside #loginBox #login #loginBtn {
         background-color: #f9c515;
         height: 30px;
         border-radius: 5px; }
-      aside #divAside #loginBox #login #loginBtn:hover {
+      #login #divAside #loginBox #login #loginBtn:hover {
         background-color: #eba109;
         height: 30px;
         border-radius: 5px; }

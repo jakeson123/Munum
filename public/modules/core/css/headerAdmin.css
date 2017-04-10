@@ -1,0 +1,51 @@
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+  display: none !important; }
+
+@font-face {
+  font-family: "lemonMilk";
+  src: url("../../../lib/fonts/lemonMilk.otf") format("opentype"); }
+
+@font-face {
+  font-family: "adam";
+  src: url("../../../lib/fonts/adam.otf") format("opentype"); }
+
+body {
+  overflow: hidden; }
+
+/*@media screen and (max-width: 780px) {
+    .navbar {
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #logo {
+            display: none;
+        }
+    }
+}*/
+#navAdmin {
+  height: 100vh;
+  width: 70px;
+  background-color: #f9c515; }
+  #navAdmin ul li {
+    width: 70px;
+    height: 70px; }
+    #navAdmin ul li a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #navAdmin ul li a i {
+        font-size: 20px;
+        color: #eba109; }
+    #navAdmin ul li a:hover {
+      background-color: #f9c515; }
+      #navAdmin ul li a:hover i {
+        color: white; }

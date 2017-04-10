@@ -1,0 +1,71 @@
+.userBoxDiv {
+  width: 220px;
+  display: flex;
+  flex-flow: column nowrap;
+  color: white;
+  top: 300px;
+  margin: 12px; }
+  .userBoxDiv .pictureBox {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0d133a; }
+    .userBoxDiv .pictureBox .picture {
+      width: 150px;
+      height: 150px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      background-color: white; }
+  .userBoxDiv .textBox {
+    width: 100%;
+    height: 100%;
+    background-color: #0d133a; }
+    .userBoxDiv .textBox h4 {
+      text-align: center;
+      color: #cbcbcb; }
+  .userBoxDiv .editores {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
+    .userBoxDiv .editores a {
+      text-decoration: none; }
+    .userBoxDiv .editores #edit {
+      width: 200px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      border-bottom-left-radius: 10px;
+      background-color: #f9c515;
+      cursor: pointer;
+      border: 0;
+      color: white; }
+    .userBoxDiv .editores #delete {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom-right-radius: 10px;
+      background-color: #eba109;
+      cursor: pointer;
+      border: 0;
+      color: white; }
+    .userBoxDiv .editores #edit:hover {
+      background-color: white;
+      color: #eba109;
+      border-bottom-left-radius: 10px;
+      border: 1px solid #f9c515;
+      text-decoration: none; }
+    .userBoxDiv .editores #delete:hover {
+      background-color: white;
+      color: #eba109;
+      border-bottom-right-radius: 10px;
+      border: 1px solid #f9c515; }

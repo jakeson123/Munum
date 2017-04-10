@@ -9,9 +9,9 @@ angular.module('users').config(['$stateProvider', '$urlRouterProvider',
             url: '/profile',
             templateUrl: '/modules/users/views/authentication/signin.client.view.html'
         })
-        .state('profile2', {
-            url: '/user',
-            templateUrl: '/modules/users/views/authentication/signin.client.view.html'
+        .state('list', {
+            url: '/list',
+            templateUrl: '/modules/users/views/userList.client.view.html'
         })
         .state('registro', {
             url: '/auth/signup'

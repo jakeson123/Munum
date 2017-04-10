@@ -1,0 +1,9 @@
+heroku login
+  user: prensa.munum@gmail.com
+git add.
+git commit -am "asdfasd"
+git push heroku master
+heroku open
+
+heroku logs --tail
+heroku config:set NODE_ENV=producction

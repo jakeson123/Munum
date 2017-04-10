@@ -1,0 +1,34 @@
+@import 'core';
+
+#navAdmin {
+    height: 100vh;
+    width: 70px;
+    background-color: $yellowMUNUM;
+
+    ul {
+        li {
+            width: 70px;
+            height: 70px;
+
+            a {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    font-size: 20px;
+                    color: $organgeMUNUM;
+                }
+            }
+
+            a:hover {
+              background-color: $yellowMUNUM;
+                i {
+                    color: white;
+                }
+            }
+        }
+    }
+}
