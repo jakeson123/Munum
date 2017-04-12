@@ -25,6 +25,7 @@ module.exports = {
                 '../lib/angular/angular.min.js',
                 '../lib/angular-resource/angular-resource.min.js',
                 '../lib/angular-ui-router/release/angular-ui-router.min.js',
+                '../lib/angular-route/angular-route.min.js',
 
                 '/config.js',
                 '/application.js',
