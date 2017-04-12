@@ -4,7 +4,7 @@
     height: 100vh;
     width: 70px;
     background-color: $yellowMUNUM;
-
+    position: fixed;
     ul {
         li {
             width: 70px;
@@ -34,4 +34,11 @@
             }
         }
     }
+}
+
+#adminViewsDiv{
+  position: absolute;
+  left: 70px;
+  width:100%;
+  height: 100%;
 }

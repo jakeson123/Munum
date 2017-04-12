@@ -3,7 +3,7 @@
 var ApplicationConfiguration = function() {
 
 	var applicationModuleName = 'munum';
-	var applicationModuleVendorDependencies = ['ngResource', 'ui.router'];
+	var applicationModuleVendorDependencies = ['ngResource', 'ngRoute', 'ui.router'];
 
 	// Add a new vertical module
 	var registerModule = function(moduleName, dependencies) {

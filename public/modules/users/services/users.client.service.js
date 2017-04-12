@@ -1,11 +1,13 @@
 'use strict'
 angular.module('users')
     .factory('Users', ['$resource',
-        return $resource('users/:usersId', {
-            usersId: '@_id'
-        }, {
-            update: {
-                method: 'PUT'
-            }
-        });
+        function($resource) {
+            return $resource('/users/:userId', {
+                userId: '@_id'
+            }, {
+                update: {
+                    method: 'PUT'
+                }
+            });
+        }
     ]);

@@ -1,5 +1,5 @@
-<section data-ng-controller='UserListController'>
-    <div class="list-group" data-ng-repeat="user in usersList">
+<section data-ng-controller='UserListController' data-ng-init="find()">
+    <div class="list-group" data-ng-repeat="user in users">
         <div class ="col-xs-3">
             <div class="userBoxDiv">
                 <div class="pictureBox">
@@ -13,19 +13,16 @@
                 </h4>
                 </div>
                 <div class="editores">
-                    <a href="#!/users/{{user.id}}"><div id="edit">Editar</div></a>
-                    <a href="#!/users/{{user.id}}"><div id="delete"><i class="icon-trash"></i></div></a>
+                    <a href="#!/users/{{user._id}}"><div id="edit">Editar</div></a>
+                    <div ng-click="delete(user)"><div id="delete"><i class="icon-trash"></i></div></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="alert alert-warning text-center" data-ng-hide="!customers.$resolved || customers.length">
+    <div class="alert alert-warning text-center" data-ng-hide="!users || users.length">
         No Customers yet, why don't you <a href="/#!/customers/create">create one</a>?
     </div>
 </section>
-
-
-
 
 <!--<div class="list-group">
     <div class="col-xs-6 col-sm-4 extra-space" data-ng-repeat="customer in customersCtrl.customers | filter:searchText">

@@ -24,6 +24,7 @@ module.exports = {
                 '/lib/jquery/dist/jquery.js',
                 '/lib/angular/angular.min.js',
                 '/lib/angular-resource/angular-resource.min.js',
+                '/lib/angular-route/angular-route.min.js',
                 '/lib/angular-ui-router/release/angular-ui-router.min.js',
 
                 '/config.js',
@@ -41,7 +42,8 @@ module.exports = {
                 '/modules/users/users.client.module.js',
                 '/modules/users/config/users.client.routes.js',
                 '/modules/users/controllers/authentication.client.controller.js',
-                '/modules/users/controllers/userList.client.controller.js'
+                '/modules/users/controllers/userList.client.controller.js',
+                '/modules/users/services/users.client.service.js'
             ]
         }
     }
