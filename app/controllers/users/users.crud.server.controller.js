@@ -23,7 +23,6 @@ exports.list = function(req, res) {
 exports.delete = function(req, res) {
     var user = req.user;
     user.remove(function(err) {
-
         if (err) {
             return res.status(400).send({
                 message: errorHandler.getErrorMessage(err)
@@ -31,7 +30,6 @@ exports.delete = function(req, res) {
         } else {
             res.jsonp(user);
         }
-          console.log('hola')
     });
 };
 

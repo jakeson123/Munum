@@ -16,6 +16,12 @@ module.exports = function(app) {
 
     	*/
 
+      /*query -> get
+        get->  get(id)
+        remove -> delete(id)
+        update -> put(id)
+        save -> post*/
+
 
     /*Setting up the users authentication*/
     app.route('/auth/signup').post(users.signup);

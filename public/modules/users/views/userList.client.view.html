@@ -1,5 +1,5 @@
 <section data-ng-controller='UserListController' data-ng-init="find()">
-    <div class="list-group" data-ng-repeat="user in users">
+    <div class="list-group" data-ng-repeat="user in users | orderBy">
         <div class ="col-xs-3">
             <div class="userBoxDiv">
                 <div class="pictureBox">
